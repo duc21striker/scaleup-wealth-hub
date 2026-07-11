@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Build an Email List from Scratch | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Learn how to build your email list using landing pages, lead magnets, forms, and automation to grow your audience and generate sales.">
+    <meta name="keywords" content="build email list, email list building, lead magnets, landing pages, email automation, list building strategies">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Build an Email List from Scratch | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Learn how to build your email list using landing pages, lead magnets, forms, and automation to grow your audience.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-14.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-6.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page { padding: 160px 8% 80px; background: var(--background); }
+        .blog-post-container { max-width: 850px; margin: 0 auto; background: var(--white); border-radius: var(--radius); padding: 50px; box-shadow: var(--shadow); }
+        .blog-post-meta-top { display: flex; gap: 20px; font-size: 14px; color: var(--gray); margin-bottom: 20px; flex-wrap: wrap; }
+        .blog-post-meta-top .category { background: var(--primary); color: var(--white); padding: 2px 16px; border-radius: 50px; font-weight: 600; font-size: 12px; }
+        .blog-post-container h1 { font-size: 42px; line-height: 1.2; margin-bottom: 20px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-featured-image { width: 100%; border-radius: var(--radius); margin: 25px 0 30px; overflow: hidden; }
+        .blog-post-featured-image img { width: 100%; height: auto; display: block; }
+        .blog-post-content { font-size: 17px; line-height: 1.9; color: var(--secondary); }
+        .blog-post-content h2 { font-size: 30px; margin: 40px 0 15px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-content h3 { font-size: 24px; margin: 30px 0 12px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-content ul, .blog-post-content ol { margin: 15px 0 20px 25px; }
+        .blog-post-content li { margin-bottom: 8px; }
+        .blog-post-content .highlight-box { background: rgba(216, 178, 53, 0.08); border-left: 4px solid var(--primary); padding: 20px 25px; border-radius: 0 12px 12px 0; margin: 25px 0; }
+        .blog-post-content .highlight-box strong { color: var(--primary); }
+        .blog-post-content .step-box { background: var(--white); border: 1px solid var(--gray-light); padding: 20px 25px; border-radius: 12px; margin: 15px 0; }
+        .blog-post-content .step-box .step-num { display: inline-block; background: var(--primary); color: white; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 32px; font-weight: 700; margin-right: 12px; font-size: 14px; }
+        .blog-post-content .step-box h4 { display: inline-block; font-size: 18px; font-family: 'Poppins', sans-serif; }
+        .blog-post-content .step-box p { margin-top: 8px; margin-left: 44px; }
+        .blog-post-content .step-box ul { margin-left: 44px; }
+        .blog-post-author { display: flex; align-items: center; gap: 20px; padding: 30px 0; margin-top: 40px; border-top: 1px solid var(--gray-light); border-bottom: 1px solid var(--gray-light); }
+        .blog-post-author img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; }
+        .blog-post-author h4 { font-size: 18px; font-family: 'Poppins', sans-serif; }
+        .blog-post-author p { color: var(--gray); font-size: 14px; }
+        .blog-post-author .author-social { display: flex; gap: 10px; margin-top: 5px; }
+        .blog-post-author .author-social a { color: var(--gray); transition: var(--transition); font-size: 18px; }
+        .blog-post-author .author-social a:hover { color: var(--primary); }
+        .blog-post-share { display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+        .blog-post-share a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 50px; background: var(--background); color: var(--secondary); transition: var(--transition); font-size: 14px; text-decoration: none; }
+        .blog-post-share a:hover { transform: translateY(-3px); }
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+        .blog-post-related { margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--gray-light); }
+        .blog-post-related h3 { font-size: 28px; margin-bottom: 25px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .blog-post-related-grid .related-card { background: var(--background); padding: 20px; border-radius: 12px; transition: var(--transition); }
+        .blog-post-related-grid .related-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+        .blog-post-related-grid .related-card h4 { font-size: 16px; margin-bottom: 8px; font-family: 'Poppins', sans-serif; }
+        .blog-post-related-grid .related-card p { font-size: 14px; color: var(--gray); }
+        .blog-post-related-grid .related-card a { color: var(--primary); font-weight: 600; font-size: 14px; }
+        @media (max-width: 768px) {
+            .blog-post-container { padding: 25px; }
+            .blog-post-container h1 { font-size: 30px; }
+            .blog-post-related-grid { grid-template-columns: 1fr; }
+            .blog-post-content .step-box p,
+            .blog-post-content .step-box ul { margin-left: 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"><div class="loader-spinner"></div></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="assets/images/12.png" alt="ScaleUp Wealth Hub"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <div class="blog-post-meta-top">
+                <span class="category">Email Marketing</span>
+                <span><i class="far fa-calendar"></i> October 5, 2025</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <h1>Build an Email List from Scratch</h1>
+
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-6.jpg" alt="Build an Email List from Scratch">
+            </div>
+
+            <div class="blog-post-content">
+                <p><strong>Your email list is your most valuable digital asset.</strong> It's the only audience you truly own. Here's how to build one from scratch.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How to create a lead magnet</li>
+                    <li>How to build a landing page</li>
+                    <li>How to set up forms and automation</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 The Truth:</strong> The best time to start building your email list was yesterday. The second best time is today.
+                </div>
+
+                <h2>Step 1: Create a Lead Magnet</h2>
+
+                <div class="step-box">
+                    <span class="step-num">1</span>
+                    <h4>Lead Magnet</h4>
+                    <p>A lead magnet is something valuable you give away in exchange for an email address.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>Free guide or eBook</li>
+                        <li>Checklist or template</li>
+                        <li>Video training</li>
+                        <li>Free consultation</li>
+                        <li>Discount or coupon</li>
+                        <li>Tool or resource list</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Your lead magnet should solve a specific problem for your audience.</p>
+                </div>
+
+                <h2>Step 2: Build a Landing Page</h2>
+
+                <div class="step-box">
+                    <span class="step-num">2</span>
+                    <h4>Landing Page</h4>
+                    <p>A landing page is a simple page designed to capture emails. It should have:</p>
+                    <ul>
+                        <li>A clear headline</li>
+                        <li>Explanation of the lead magnet's value</li>
+                        <li>A simple signup form</li>
+                        <li>A call to action button</li>
+                        <li>Minimal distractions</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Use free tools like Carrd, MailerLite, or ConvertKit.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 Quick Tip:</strong> A landing page should have one goal—get the email address. No menus, no links, just one button.
+                </div>
+
+                <h2>Step 3: Set Up Signup Forms</h2>
+
+                <div class="step-box">
+                    <span class="step-num">3</span>
+                    <h4>Signup Forms</h4>
+                    <p>Place signup forms on your website strategically:</p>
+                    <ul>
+                        <li><strong>Header:</strong> Top of every page</li>
+                        <li><strong>Sidebar:</strong> On blog posts</li>
+                        <li><strong>Footer:</strong> Bottom of every page</li>
+                        <li><strong>Pop-up:</strong> Exit-intent or timed</li>
+                        <li><strong>Inline:</strong> Within blog content</li>
+                    </ul>
+                </div>
+
+                <h2>Step 4: Add Automation</h2>
+
+                <div class="step-box">
+                    <span class="step-num">4</span>
+                    <h4>Automation</h4>
+                    <p>Set up automated email sequences:</p>
+                    <ul>
+                        <li><strong>Welcome email:</strong> Thank them and deliver the lead magnet</li>
+                        <li><strong>Nurture sequence:</strong> Build trust over 3-5 emails</li>
+                        <li><strong>Re-engagement:</strong> Bring back inactive subscribers</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Your welcome email is the most important. Make it personal and valuable.</p>
+                </div>
+
+                <h2>Step 5: Drive Traffic</h2>
+
+                <div class="step-box">
+                    <span class="step-num">5</span>
+                    <h4>Drive Traffic</h4>
+                    <p>Get people to your landing page:</p>
+                    <ul>
+                        <li><strong>Social media:</strong> Share your lead magnet</li>
+                        <li><strong>Blog posts:</strong> Promote within content</li>
+                        <li><strong>YouTube:</strong> Mention in videos</li>
+                        <li><strong>Guest posts:</strong> Write for other sites</li>
+                        <li><strong>Paid ads:</strong> Run targeted campaigns</li>
+                    </ul>
+                </div>
+
+                <h2>Quick Checklist</h2>
+
+                <ul>
+                    <li>✅ Create a valuable lead magnet</li>
+                    <li>✅ Build a simple landing page</li>
+                    <li>✅ Set up signup forms</li>
+                    <li>✅ Create automated welcome emails</li>
+                    <li>✅ Drive traffic to your landing page</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Building an email list takes time, but it's one of the best investments you can make. Every email you collect is a direct relationship with a potential customer.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Start?</strong> Create a simple lead magnet today. Don't overthink it—start with something small and improve later.
+                </div>
+            </div>
+
+            <div class="blog-post-author">
+                <img src="assets/images/12.png" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram</i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-14.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-14.html&text=Build an Email List from Scratch" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-14.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-14.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card"><h4>Email Marketing Still Works</h4><p>Why email marketing is effective</p><a href="blog-post-13.html">Read More →</a></div>
+                    <div class="related-card"><h4>Best Free Email Marketing Tools</h4><p>Free tools for email marketing</p><a href="blog-post-15.html">Read More →</a></div>
+                    <div class="related-card"><h4>How to Create Facebook Ads That Convert</h4><p>Combine email with Facebook Ads</p><a href="blog-post-4.html">Read More →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

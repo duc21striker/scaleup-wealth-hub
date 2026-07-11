@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>ChatGPT vs Claude vs Gemini: Which AI Assistant is Best? | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Compare ChatGPT, Claude, and Gemini to find the best AI assistant for coding, marketing, research, writing, and business. Pricing, features, speed, and accuracy compared.">
+    <meta name="keywords" content="ChatGPT vs Claude vs Gemini, AI assistant comparison, best AI tool, ChatGPT review, Claude review, Gemini review">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ChatGPT vs Claude vs Gemini: Which AI Assistant is Best? | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Compare ChatGPT, Claude, and Gemini to find the best AI assistant for coding, marketing, research, writing, and business.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-2.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-4.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 15px;
+        }
+
+        .blog-post-content .comparison-table th,
+        .blog-post-content .comparison-table td {
+            padding: 12px 15px;
+            border: 1px solid var(--gray-light);
+            text-align: left;
+        }
+
+        .blog-post-content .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .blog-post-content .comparison-table tr:nth-child(even) {
+            background: var(--background);
+        }
+
+        .blog-post-content .comparison-table .check {
+            color: #22c55e;
+        }
+
+        .blog-post-content .comparison-table .x {
+            color: #ef4444;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .comparison-table {
+                font-size: 13px;
+            }
+            .blog-post-content .comparison-table th,
+            .blog-post-content .comparison-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">AI Tools</span>
+                <span><i class="far fa-calendar"></i> January 12, 2026</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>ChatGPT vs Claude vs Gemini: Which AI Assistant is Best?</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-4.jpg" alt="ChatGPT vs Claude vs Gemini Comparison">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Three AI giants are competing for your attention: OpenAI's ChatGPT, Anthropic's Claude, and Google's Gemini.</strong> Each offers powerful capabilities, but which one is right for your business?</p>
+
+                <p>In this comprehensive comparison, we'll break down the key differences in pricing, features, speed, accuracy, and use cases to help you make the right choice.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How each AI assistant compares in terms of pricing and features</li>
+                    <li>Which tool is best for coding, marketing, research, and writing</li>
+                    <li>Speed and accuracy comparisons</li>
+                    <li>Recommendations based on your specific needs</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 Quick Take:</strong> There's no single "best" AI assistant—it depends on what you need. ChatGPT is the most versatile, Claude excels at long-form analysis, and Gemini offers seamless Google integration.
+                </div>
+
+                <h2>Comparison Table: ChatGPT vs Claude vs Gemini</h2>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>ChatGPT</th>
+                            <th>Claude</th>
+                            <th>Gemini</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Developer</strong></td>
+                            <td>OpenAI</td>
+                            <td>Anthropic</td>
+                            <td>Google</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Free Version</strong></td>
+                            <td>✅ Yes (GPT-3.5)</td>
+                            <td>✅ Yes</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paid Version</strong></td>
+                            <td>From $20/mo</td>
+                            <td>From $20/mo</td>
+                            <td>From $20/mo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Context Window</strong></td>
+                            <td>128K tokens</td>
+                            <td>200K tokens</td>
+                            <td>1M tokens</td>
+                        </tr>
+                        <tr>
+                            <td><strong>File Upload</strong></td>
+                            <td>✅ Yes</td>
+                            <td>✅ Yes</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image Generation</strong></td>
+                            <td>✅ DALL-E</td>
+                            <td>❌ No</td>
+                            <td>✅ Imagen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code Generation</strong></td>
+                            <td>⭐ Excellent</td>
+                            <td>⭐ Very Good</td>
+                            <td>⭐ Very Good</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Writing Quality</strong></td>
+                            <td>⭐ Excellent</td>
+                            <td>⭐ Excellent</td>
+                            <td>⭐ Very Good</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Research/Analysis</strong></td>
+                            <td>⭐ Very Good</td>
+                            <td>⭐ Excellent</td>
+                            <td>⭐ Very Good</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Integration</strong></td>
+                            <td>❌ No</td>
+                            <td>❌ No</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real-time Info</strong></td>
+                            <td>✅ Yes</td>
+                            <td>❌ Limited</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>1. ChatGPT (OpenAI)</h2>
+                <p><strong>Best for:</strong> Versatility, coding, and creative writing</p>
+                <p>ChatGPT is the most well-known AI assistant, and for good reason. It excels at a wide range of tasks including coding, writing, brainstorming, and problem-solving. With the paid version, you get access to GPT-4, which is significantly more capable than the free version.</p>
+
+                <div class="highlight-box">
+                    <strong>🎯 Best Use Case:</strong> If you need an all-purpose AI assistant that can handle everything from writing emails to generating code, ChatGPT is your best bet.
+                </div>
+
+                <h3>Pros</h3>
+                <ul>
+                    <li><strong>Versatile:</strong> Handles a wide range of tasks effectively</li>
+                    <li><strong>DALL-E Integration:</strong> Create images within the same tool</li>
+                    <li><strong>Custom GPTs:</strong> Build specialized AI assistants</li>
+                    <li><strong>Massive ecosystem:</strong> Plugins and integrations</li>
+                </ul>
+
+                <h3>Cons</h3>
+                <ul>
+                    <li>Shorter context window than Claude and Gemini</li>
+                    <li>No direct Google integration</li>
+                    <li>Can sometimes hallucinate or provide inaccurate information</li>
+                </ul>
+
+                <h2>2. Claude (Anthropic)</h2>
+                <p><strong>Best for:</strong> Long-form analysis, research, and safety</p>
+                <p>Claude is designed with safety and reliability in mind. It excels at processing large amounts of text and providing thoughtful, nuanced responses. The 200K token context window means you can upload entire books or lengthy reports for analysis.</p>
+
+                <div class="highlight-box">
+                    <strong>🎯 Best Use Case:</strong> If you need to analyze long documents, conduct research, or want more thoughtful, carefully considered responses, Claude is excellent.
+                </div>
+
+                <h3>Pros</h3>
+                <ul>
+                    <li><strong>Large context window:</strong> 200K tokens—great for long documents</li>
+                    <li><strong>Safety-focused:</strong> Designed with strong ethical guidelines</li>
+                    <li><strong>Excellent writing:</strong> Produces clear, well-structured content</li>
+                    <li><strong>File upload:</strong> PDFs, Word docs, and more</li>
+                </ul>
+
+                <h3>Cons</h3>
+                <ul>
+                    <li>No image generation</li>
+                    <li>Limited real-time information</li>
+                    <li>Smaller ecosystem than ChatGPT</li>
+                </ul>
+
+                <h2>3. Gemini (Google)</h2>
+                <p><strong>Best for:</strong> Google integration and real-time information</p>
+                <p>Gemini (formerly Bard) is Google's AI assistant that seamlessly integrates with Google Workspace. If you live in Gmail, Google Docs, and Sheets, Gemini is a game-changer. It can summarize emails, draft documents, and analyze spreadsheets.</p>
+
+                <div class="highlight-box">
+                    <strong>🎯 Best Use Case:</strong> If you use Google Workspace daily, Gemini will save you hours by automating tasks within your workflow.
+                </div>
+
+                <h3>Pros</h3>
+                <ul>
+                    <li><strong>Google Integration:</strong> Seamless integration with Gmail, Docs, Sheets</li>
+                    <li><strong>Large context window:</strong> 1M tokens (massive!)</li>
+                    <li><strong>Real-time information:</strong> Up-to-date with current events</li>
+                    <li><strong>Image generation:</strong> Imagen integration</li>
+                </ul>
+
+                <h3>Cons</h3>
+                <ul>
+                    <li>Can sometimes be slower than ChatGPT</li>
+                    <li>Limited compared to ChatGPT in some creative tasks</li>
+                    <li>Privacy concerns for some users</li>
+                </ul>
+
+                <h2>Which AI Assistant Should You Choose?</h2>
+
+                <h3>Choose ChatGPT if:</h3>
+                <ul>
+                    <li>You need a versatile, all-purpose AI assistant</li>
+                    <li>You want image generation built-in (DALL-E)</li>
+                    <li>You need coding assistance</li>
+                    <li>You want access to custom GPTs and plugins</li>
+                </ul>
+
+                <h3>Choose Claude if:</h3>
+                <ul>
+                    <li>You analyze long documents regularly</li>
+                    <li>You need thoughtful, nuanced responses</li>
+                    <li>Safety and ethical AI are important to you</li>
+                    <li>You want the best writing quality</li>
+                </ul>
+
+                <h3>Choose Gemini if:</h3>
+                <ul>
+                    <li>You use Google Workspace daily</li>
+                    <li>You need real-time information</li>
+                    <li>You want to process massive amounts of data (1M tokens)</li>
+                    <li>You prefer Google's ecosystem</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🎯 Key Takeaway:</strong> The best approach? Use all three! Each AI assistant has unique strengths. Many entrepreneurs use ChatGPT for creative tasks, Claude for research, and Gemini for Google integration.
+                </div>
+
+                <h2>Final Thoughts</h2>
+                <p>The AI landscape is evolving rapidly. In 2026, you no longer have to choose just one—you can use multiple tools for different tasks. The key is understanding each tool's strengths and using them accordingly.</p>
+
+                <p>Start with the free version of each tool, experiment, and see which one fits your workflow best. Your AI assistant should feel like a natural extension of your workflow, not a tool you fight against.</p>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-2.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-2.html&text=ChatGPT vs Claude vs Gemini - Which AI Assistant is Best?" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-2.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-2.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>10 AI Tools Every Entrepreneur Should Use</h4>
+                        <p>Discover the best AI tools for your business</p>
+                        <a href="blog-post-1.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>AI Tools That Replace Hours of Manual Work</h4>
+                        <p>Save time with these AI automation tools</p>
+                        <a href="blog-post-3.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>How to Create Facebook Ads That Convert</h4>
+                        <p>Master Facebook advertising with AI</p>
+                        <a href="blog-post-4.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

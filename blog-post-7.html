@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>5 Tips for Building Websites That Rank on Google | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Learn simple SEO strategies that help websites appear higher in Google search results. Covers speed, meta tags, keywords, images, and mobile optimization.">
+    <meta name="keywords" content="SEO tips, website ranking, Google SEO, website optimization, mobile optimization, page speed, meta tags, keywords">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="5 Tips for Building Websites That Rank on Google | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Learn simple SEO strategies that help websites appear higher in Google search results. Covers speed, meta tags, keywords, images, and mobile optimization.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-7.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-3.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .tip-box {
+            background: var(--white);
+            border: 1px solid var(--gray-light);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post-content .tip-box .tip-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .blog-post-content .tip-box h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-content .tip-box p {
+            margin-top: 10px;
+            margin-left: 48px;
+        }
+
+        .blog-post-content .tip-box ul {
+            margin-left: 48px;
+        }
+
+        .blog-post-content .success-box {
+            background: rgba(34, 197, 94, 0.08);
+            border-left: 4px solid #22c55e;
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .success-box strong {
+            color: #22c55e;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .tip-box p,
+            .blog-post-content .tip-box ul {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">SEO</span>
+                <span><i class="far fa-calendar"></i> December 25, 2025</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>5 Tips for Building Websites That Rank on Google</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-3.jpg" alt="5 Tips for Building Websites That Rank on Google">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Building a beautiful website isn't enough—you need people to find it.</strong> If your website isn't ranking on Google, it's like having a store in the middle of nowhere with no sign pointing to it.</p>
+
+                <p>Here are 5 simple SEO strategies that help websites appear higher in Google search results.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How to optimize your website speed</li>
+                    <li>How to write effective meta tags</li>
+                    <li>How to choose and use keywords</li>
+                    <li>How to optimize images for SEO</li>
+                    <li>How to make your site mobile-friendly</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 The Truth:</strong> SEO isn't a magic trick—it's a set of best practices that help search engines understand and rank your content.
+                </div>
+
+                <h2>Tip 1: Optimize Your Website Speed</h2>
+
+                <div class="tip-box">
+                    <span class="tip-number">1</span>
+                    <h4>Page Speed</h4>
+                    <p>Google uses page speed as a ranking factor. A slow website hurts your user experience and your rankings.</p>
+                    <p><strong>How to check your speed:</strong></p>
+                    <ul>
+                        <li>Use <strong>Google PageSpeed Insights</strong> (free tool)</li>
+                        <li>Aim for a score of 90+ on mobile</li>
+                        <li>Check your Core Web Vitals</li>
+                    </ul>
+                    <p><strong>How to improve:</strong></p>
+                    <ul>
+                        <li><strong>Compress images:</strong> Use tools like TinyPNG or ImageOptim</li>
+                        <li><strong>Enable caching:</strong> Use browser caching and CDN</li>
+                        <li><strong>Minimize code:</strong> Remove unnecessary CSS and JavaScript</li>
+                        <li><strong>Use a fast hosting provider:</strong> Your hosting matters</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> A 1-second delay in page load time can reduce conversions by 7%.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Quick Win:</strong> Compress your images today. It's the fastest way to improve page speed.
+                </div>
+
+                <h2>Tip 2: Write Effective Meta Tags</h2>
+
+                <div class="tip-box">
+                    <span class="tip-number">2</span>
+                    <h4>Meta Tags</h4>
+                    <p>Meta tags tell Google what your page is about. They appear in search results and help people decide whether to click.</p>
+                    <p><strong>Two most important meta tags:</strong></p>
+                    <ul>
+                        <li><strong>Title Tag:</strong> The headline that appears in search results. Keep it under 60 characters.</li>
+                        <li><strong>Meta Description:</strong> The short summary under the title. Keep it under 160 characters.</li>
+                    </ul>
+                    <p><strong>Best practices:</strong></p>
+                    <ul>
+                        <li>Include your primary keyword in both</li>
+                        <li>Make it compelling and clickable</li>
+                        <li>Be specific about what the page offers</li>
+                    </ul>
+                    <p><strong>Example of good meta tags:</strong></p>
+                    <div style="background: var(--background); padding: 15px; border-radius: 8px; font-size: 14px; margin-top: 10px;">
+                        <strong>Title:</strong> 5 Tips for Building Websites That Rank on Google | ScaleUp Wealth Hub<br>
+                        <strong>Description:</strong> Learn simple SEO strategies to help your website rank higher on Google. Covers speed, meta tags, keywords, images, and mobile optimization.
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Pro Tip:</strong> Your title tag is the first thing people see. Make it irresistible.
+                </div>
+
+                <h2>Tip 3: Use Keywords Strategically</h2>
+
+                <div class="tip-box">
+                    <span class="tip-number">3</span>
+                    <h4>Keywords</h4>
+                    <p>Keywords are the words and phrases people type into Google. Using them correctly helps Google match your content to search queries.</p>
+                    <p><strong>Where to use keywords:</strong></p>
+                    <ul>
+                        <li>✅ Title tag (most important)</li>
+                        <li>✅ H1 heading (main page title)</li>
+                        <li>✅ H2 and H3 subheadings</li>
+                        <li>✅ First paragraph of content</li>
+                        <li>✅ Image alt text</li>
+                        <li>✅ URL (if possible)</li>
+                    </ul>
+                    <p><strong>Tools for finding keywords:</strong></p>
+                    <ul>
+                        <li><strong>Google Keyword Planner:</strong> Free tool from Google</li>
+                        <li><strong>Ubersuggest:</strong> Free keyword ideas</li>
+                        <li><strong>AnswerThePublic:</strong> See what people are searching</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Don't "keyword stuff"—use keywords naturally. Google is smart enough to detect overuse.</p>
+                </div>
+
+                <h2>Tip 4: Optimize Your Images</h2>
+
+                <div class="tip-box">
+                    <span class="tip-number">4</span>
+                    <h4>Image Optimization</h4>
+                    <p>Images can slow down your site and hurt SEO if not optimized properly.</p>
+                    <p><strong>Three things to do:</strong></p>
+                    <ol>
+                        <li><strong>Compress images:</strong> Reduce file size without losing quality</li>
+                        <li><strong>Use descriptive filenames:</strong> Instead of "IMG_1234.jpg," use "seo-tips-for-websites.jpg"</li>
+                        <li><strong>Add alt text:</strong> Describe the image for accessibility and SEO</li>
+                    </ol>
+                    <p><strong>Tools for image optimization:</strong></p>
+                    <ul>
+                        <li><strong>TinyPNG:</strong> Compress PNG and JPG images</li>
+                        <li><strong>Squoosh:</strong> Google's image compression tool</li>
+                        <li><strong>ImageOptim:</strong> Mac app for image compression</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Use WebP format when possible—it's smaller than JPG/PNG.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Quick Win:</strong> Use descriptive alt text for all your images. It helps both SEO and accessibility.
+                </div>
+
+                <h2>Tip 5: Make Your Site Mobile-Friendly</h2>
+
+                <div class="tip-box">
+                    <span class="tip-number">5</span>
+                    <h4>Mobile Optimization</h4>
+                    <p>Google uses mobile-first indexing, meaning it primarily looks at the mobile version of your site. If your site isn't mobile-friendly, you won't rank well.</p>
+                    <p><strong>How to check if your site is mobile-friendly:</strong></p>
+                    <ul>
+                        <li>Use <strong>Google's Mobile-Friendly Test</strong></li>
+                        <li>Check your site on your phone</li>
+                        <li>Look for issues like tiny text, buttons too close, and horizontal scrolling</li>
+                    </ul>
+                    <p><strong>Best practices for mobile:</strong></p>
+                    <ul>
+                        <li><strong>Responsive design:</strong> Your site should adapt to any screen size</li>
+                        <li><strong>Readable font size:</strong> At least 16px for body text</li>
+                        <li><strong>Tap-friendly buttons:</strong> At least 44px for touch targets</li>
+                        <li><strong>Easy navigation:</strong> Simple menu that works on touch</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Test your site on multiple devices and browsers before launching.</p>
+                </div>
+
+                <div class="success-box">
+                    <strong>✅ Pro Tip:</strong> A mobile-friendly site is no longer optional—it's required for SEO success.
+                </div>
+
+                <h2>Quick SEO Checklist</h2>
+
+                <ul>
+                    <li>✅ Page speed: Score 90+ on Google PageSpeed Insights</li>
+                    <li>✅ Title tags: Under 60 characters with keyword</li>
+                    <li>✅ Meta descriptions: Under 160 characters with keyword</li>
+                    <li>✅ Keywords: Used naturally in headings and content</li>
+                    <li>✅ Images: Compressed with descriptive alt text</li>
+                    <li>✅ Mobile-friendly: Pass Google's Mobile-Friendly Test</li>
+                </ul>
+
+                <h2>Bonus: Additional SEO Tips</h2>
+
+                <ul>
+                    <li><strong>Create quality content:</strong> Google rewards helpful, well-written content</li>
+                    <li><strong>Build backlinks:</strong> Links from other sites boost your authority</li>
+                    <li><strong>Use internal links:</strong> Link to other pages on your site</li>
+                    <li><strong>Add a sitemap:</strong> Helps Google find all your pages</li>
+                    <li><strong>Use HTTPS:</strong> Google prefers secure websites</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>SEO isn't complicated—but it does require consistent effort. Start with these 5 tips, and you'll see improvements in your search rankings over time.</p>
+
+                <p>Remember, SEO is a marathon, not a sprint. The best time to start optimizing was yesterday. The second best time is today.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Rank?</strong> Start with one tip today. Pick the easiest one and implement it. Then move to the next.
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-7.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-7.html&text=5 Tips for Building Websites That Rank on Google" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-7.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-7.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>Complete Google Business Profile Guide</h4>
+                        <p>Rank locally with your business profile</p>
+                        <a href="blog-post-8.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>How Google SEO Works in 2026</h4>
+                        <p>Learn the latest SEO strategies</p>
+                        <a href="blog-post-9.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Why Every Business Needs a Website</h4>
+                        <p>Build trust and attract customers</p>
+                        <a href="blog-post-10.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

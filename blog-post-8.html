@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>Complete Google Business Profile Guide | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Learn how to set up and optimize your Google Business Profile. Covers verification, reviews, photos, local ranking, and posts to attract more customers.">
+    <meta name="keywords" content="Google Business Profile, Google My Business, local SEO, business verification, Google reviews, local ranking, GBP optimization">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Complete Google Business Profile Guide | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Learn how to set up and optimize your Google Business Profile. Covers verification, reviews, photos, local ranking, and posts.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-8.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-3.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .step-box {
+            background: var(--white);
+            border: 1px solid var(--gray-light);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post-content .step-box .step-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .blog-post-content .step-box h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-content .step-box p {
+            margin-top: 10px;
+            margin-left: 48px;
+        }
+
+        .blog-post-content .step-box ul {
+            margin-left: 48px;
+        }
+
+        .blog-post-content .success-box {
+            background: rgba(34, 197, 94, 0.08);
+            border-left: 4px solid #22c55e;
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .success-box strong {
+            color: #22c55e;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .step-box p,
+            .blog-post-content .step-box ul {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">SEO</span>
+                <span><i class="far fa-calendar"></i> December 20, 2025</span>
+                <span><i class="far fa-clock"></i> 9 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>Complete Google Business Profile Guide</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-3.jpg" alt="Complete Google Business Profile Guide">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Your Google Business Profile is the most important local marketing tool you have.</strong> It appears in Google Search and Google Maps when people look for businesses like yours. A well-optimized profile attracts more customers, builds trust, and helps you rank higher locally.</p>
+
+                <p>This complete guide covers everything you need to know about Google Business Profile.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How to create and verify your profile</li>
+                    <li>How to manage reviews effectively</li>
+                    <li>How to choose the right photos</li>
+                    <li>How to rank higher in local search</li>
+                    <li>How to use posts and updates</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 Important:</strong> Google Business Profile is free. It's one of the most effective marketing tools available to local businesses.
+                </div>
+
+                <h2>What is Google Business Profile?</h2>
+
+                <p>Google Business Profile (formerly Google My Business) is a free tool that allows you to manage how your business appears on Google Search and Maps. It displays:</p>
+
+                <ul>
+                    <li>Business name, address, and phone number</li>
+                    <li>Hours of operation</li>
+                    <li>Customer reviews and ratings</li>
+                    <li>Photos and videos of your business</li>
+                    <li>Posts and updates</li>
+                    <li>Business category and services</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🎯 The Goal:</strong> When someone searches for your business or services in your area, your profile should appear prominently.
+                </div>
+
+                <h2>Step 1: Create Your Google Business Profile</h2>
+
+                <div class="step-box">
+                    <span class="step-number">1</span>
+                    <h4>Create Your Profile</h4>
+                    <p>Follow these steps to get started:</p>
+                    <ol>
+                        <li>Go to <strong>business.google.com</strong></li>
+                        <li>Sign in with your Google account (or create one)</li>
+                        <li>Click <strong>"Add your business to Google"</strong></li>
+                        <li>Enter your <strong>business name</strong></li>
+                        <li>Select your <strong>business category</strong> (be specific)</li>
+                        <li>Add your <strong>location</strong> (if you have a physical store)</li>
+                        <li>Add your <strong>service area</strong> (if you deliver or travel to customers)</li>
+                        <li>Add your <strong>contact details</strong> (phone, website)</li>
+                        <li>Click <strong>"Continue"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Choose the most specific business category possible. For example, instead of "Restaurant," choose "Italian Restaurant."</p>
+                </div>
+
+                <h2>Step 2: Verify Your Business</h2>
+
+                <div class="step-box">
+                    <span class="step-number">2</span>
+                    <h4>Verification</h4>
+                    <p>Google needs to verify you're the business owner. Choose one of these methods:</p>
+                    <ul>
+                        <li><strong>Postcard verification:</strong> Google sends a postcard with a verification code to your business address. Takes 5-14 days.</li>
+                        <li><strong>Phone verification:</strong> You receive a text or call with a verification code. Available in some countries.</li>
+                        <li><strong>Email verification:</strong> You receive an email with a verification link. Available for some businesses.</li>
+                        <li><strong>Instant verification:</strong> If you've already verified your business with Google Search Console.</li>
+                        <li><strong>Video verification:</strong> You record a video showing your business location, equipment, and signage.</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Postcard verification is the most common method. Be patient—it can take up to 14 days.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>⚠️ Critical:</strong> You must verify your profile before it can appear publicly on Google.
+                </div>
+
+                <h2>Step 3: Optimize Your Profile</h2>
+
+                <div class="step-box">
+                    <span class="step-number">3</span>
+                    <h4>Optimize Your Profile</h4>
+                    <p>After verification, complete every section of your profile:</p>
+                    <ul>
+                        <li><strong>Business description:</strong> Write 750 characters describing your business. Include keywords and what makes you unique.</li>
+                        <li><strong>Services/products:</strong> List all the services or products you offer.</li>
+                        <li><strong>Opening hours:</strong> Include special hours for holidays.</li>
+                        <li><strong>Phone number:</strong> Use a local number if possible.</li>
+                        <li><strong>Website:</strong> Link to your website.</li>
+                        <li><strong>Appointments:</strong> Add a link to book appointments.</li>
+                        <li><strong>Messaging:</strong> Enable customers to message you directly.</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Complete every section. Google rewards fully completed profiles with better rankings.</p>
+                </div>
+
+                <h2>Step 4: Add High-Quality Photos</h2>
+
+                <div class="step-box">
+                    <span class="step-number">4</span>
+                    <h4>Photos</h4>
+                    <p>Businesses with photos get 42% more requests for directions and 35% more website clicks.</p>
+                    <p><strong>Essential photos to add:</strong></p>
+                    <ul>
+                        <li><strong>Logo:</strong> Your business logo (recommended size: 720x720)</li>
+                        <li><strong>Cover photo:</strong> Your best image (recommended size: 1200x900)</li>
+                        <li><strong>Interior photos:</strong> Show your shop, office, or workspace</li>
+                        <li><strong>Exterior photos:</strong> Help customers find your location</li>
+                        <li><strong>Product photos:</strong> Show what you sell</li>
+                        <li><strong>Team photos:</strong> Show your staff</li>
+                        <li><strong>Behind the scenes:</strong> Give customers a look inside</li>
+                    </ul>
+                    <p><strong>Photo tips:</strong></p>
+                    <ul>
+                        <li>Use high-resolution images</li>
+                        <li>Show people and faces</li>
+                        <li>Keep photos up to date</li>
+                        <li>Add photos regularly</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Businesses with 100+ photos get 520% more clicks than businesses with 10 photos.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Quick Win:</strong> Add at least 10 photos today. It's the fastest way to improve your profile.
+                </div>
+
+                <h2>Step 5: Manage Your Reviews</h2>
+
+                <div class="step-box">
+                    <span class="step-number">5</span>
+                    <h4>Reviews</h4>
+                    <p>Reviews are one of the most important ranking factors. They also build trust with potential customers.</p>
+                    <p><strong>Best practices for reviews:</strong></p>
+                    <ul>
+                        <li><strong>Ask for reviews:</strong> Politely ask satisfied customers to leave a review</li>
+                        <li><strong>Respond to all reviews:</strong> Thank positive reviews and address negative reviews professionally</li>
+                        <li><strong>Be authentic:</strong> Don't buy or fake reviews</li>
+                        <li><strong>Keep it fresh:</strong> Encourage recent reviews</li>
+                    </ul>
+                    <p><strong>How to respond to negative reviews:</strong></p>
+                    <ul>
+                        <li>Respond quickly</li>
+                        <li>Apologize sincerely</li>
+                        <li>Offer to make it right</li>
+                        <li>Take the conversation offline</li>
+                        <li>Show you care about customer satisfaction</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Businesses with 4.5+ star ratings and 100+ reviews rank much higher in local search.</p>
+                </div>
+
+                <div class="success-box">
+                    <strong>✅ Pro Tip:</strong> A thoughtful response to a negative review can turn a critic into a loyal customer.
+                </div>
+
+                <h2>Step 6: Post Regular Updates</h2>
+
+                <div class="step-box">
+                    <span class="step-number">6</span>
+                    <h4>Posts</h4>
+                    <p>Google Posts appear directly on your Business Profile. They're a great way to share news, offers, and events.</p>
+                    <p><strong>Types of posts:</strong></p>
+                    <ul>
+                        <li><strong>What's New:</strong> Share news, updates, or achievements</li>
+                        <li><strong>Events:</strong> Promote upcoming events or workshops</li>
+                        <li><strong>Offers:</strong> Share special deals and promotions</li>
+                        <li><strong>Products:</strong> Showcase new or featured products</li>
+                    </ul>
+                    <p><strong>Post tips:</strong></p>
+                    <ul>
+                        <li>Post at least once a week</li>
+                        <li>Use high-quality images in posts</li>
+                        <li>Include a clear call to action</li>
+                        <li>Keep posts short and engaging</li>
+                        <li>Posts expire after 7 days (for What's New and Events)</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Posts keep your profile active and engaging, which can improve your rankings.</p>
+                </div>
+
+                <h2>Step 7: Track Your Performance</h2>
+
+                <div class="step-box">
+                    <span class="step-number">7</span>
+                    <h4>Performance Insights</h4>
+                    <p>Google provides analytics for your Business Profile. Check these regularly:</p>
+                    <ul>
+                        <li><strong>Search queries:</strong> What keywords people use to find you</li>
+                        <li><strong>Customer actions:</strong> Website clicks, direction requests, calls</li>
+                        <li><strong>Photo views:</strong> Which photos are getting the most attention</li>
+                        <li><strong>Profile views:</strong> How many people are viewing your profile</li>
+                    </ul>
+                    <p><strong>How to access insights:</strong></p>
+                    <ul>
+                        <li>Go to your Google Business Profile dashboard</li>
+                        <li>Click on <strong>"Insights"</strong> in the left menu</li>
+                        <li>Review your performance regularly</li>
+                        <li>Adjust your strategy based on data</li>
+                    </ul>
+                </div>
+
+                <h2>Quick Checklist</h2>
+
+                <ul>
+                    <li>✅ Create your Google Business Profile</li>
+                    <li>✅ Verify your business</li>
+                    <li>✅ Complete every section of your profile</li>
+                    <li>✅ Add at least 10 high-quality photos</li>
+                    <li>✅ Ask for customer reviews and respond to all</li>
+                    <li>✅ Post updates weekly</li>
+                    <li>✅ Track performance in Insights</li>
+                </ul>
+
+                <h2>Common Mistakes to Avoid</h2>
+
+                <ul>
+                    <li><strong>Not verifying:</strong> Your profile won't appear without verification</li>
+                    <li><strong>Wrong category:</strong> Choose the most specific category</li>
+                    <li><strong>Missing information:</strong> Incomplete profiles rank lower</li>
+                    <li><strong>Ignoring reviews:</strong> Always respond to reviews</li>
+                    <li><strong>Stale photos:</strong> Keep photos current</li>
+                    <li><strong>Not posting:</strong> Active profiles rank higher</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Your Google Business Profile is one of the most powerful free marketing tools available. A well-optimized profile attracts more customers, builds trust, and helps you rank higher in local search results.</p>
+
+                <p>The key is to be consistent. Keep your information up to date, post regularly, and engage with your customers through reviews.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Get Started?</strong> Create or update your Google Business Profile today. It's free and one of the best investments of time you can make for your business.
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-8.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-8.html&text=Complete Google Business Profile Guide" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-8.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-8.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>5 Tips for Building Websites That Rank on Google</h4>
+                        <p>Learn simple SEO strategies</p>
+                        <a href="blog-post-7.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>How Google SEO Works in 2026</h4>
+                        <p>Learn the latest SEO strategies</p>
+                        <a href="blog-post-9.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Why Every Business Needs a Website</h4>
+                        <p>Build trust and attract customers</p>
+                        <a href="blog-post-10.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>How to Create Facebook Ads That Actually Convert | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Learn the proven framework for creating Facebook ads that generate leads and sales without wasting your budget. Campaign objective, targeting, creatives, and retargeting.">
+    <meta name="keywords" content="Facebook ads, Facebook advertising, convert Facebook ads, Facebook ads strategy, lead generation, Facebook ads 2026">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="How to Create Facebook Ads That Actually Convert | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Learn the proven framework for creating Facebook ads that generate leads and sales without wasting your budget.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-4.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-2.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .step-box {
+            background: var(--white);
+            border: 1px solid var(--gray-light);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post-content .step-box .step-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+            margin-right: 12px;
+        }
+
+        .blog-post-content .step-box h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-content .step-box p {
+            margin-top: 10px;
+            margin-left: 48px;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .step-box p {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">Marketing</span>
+                <span><i class="far fa-calendar"></i> January 5, 2026</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>How to Create Facebook Ads That Actually Convert</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-2.jpg" alt="How to Create Facebook Ads That Actually Convert">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Facebook advertising can be a goldmine—or a money pit.</strong> The difference between the two comes down to one thing: strategy.</p>
+
+                <p>In this guide, I'll walk you through a proven framework for creating Facebook ads that generate leads and sales without wasting your budget.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How to choose the right campaign objective</li>
+                    <li>How to target the right audience</li>
+                    <li>How to create ad creatives that stop the scroll</li>
+                    <li>How to set a budget that works</li>
+                    <li>How to use the Facebook Pixel and retargeting</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 The Truth:</strong> Most businesses fail at Facebook Ads because they skip the strategy and go straight to "boosting" posts. Don't be that business.
+                </div>
+
+                <h2>Step 1: Choose the Right Campaign Objective</h2>
+
+                <div class="step-box">
+                    <span class="step-number">1</span>
+                    <h4>Campaign Objective</h4>
+                    <p>Your campaign objective tells Facebook what you want people to do. Choose based on your goal:</p>
+                    <ul>
+                        <li><strong>Awareness:</strong> Brand awareness, reach</li>
+                        <li><strong>Traffic:</strong> Website visits, app installs</li>
+                        <li><strong>Engagement:</strong> Post engagement, page likes, event responses</li>
+                        <li><strong>Leads:</strong> Lead form submissions, calls</li>
+                        <li><strong>Sales:</strong> Conversions, catalog sales, store visits</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> If you want sales, choose the "Conversions" objective. Facebook will optimize for people most likely to buy.</p>
+                </div>
+
+                <h2>Step 2: Target the Right Audience</h2>
+
+                <div class="step-box">
+                    <span class="step-number">2</span>
+                    <h4>Audience Targeting</h4>
+                    <p>You can target people based on:</p>
+                    <ul>
+                        <li><strong>Demographics:</strong> Age, gender, location, education, job title</li>
+                        <li><strong>Interests:</strong> Hobbies, pages they like, activities</li>
+                        <li><strong>Behaviors:</strong> Purchase behavior, device usage, travel</li>
+                        <li><strong>Custom Audiences:</strong> Website visitors, email list, app users</li>
+                        <li><strong>Lookalike Audiences:</strong> People similar to your best customers</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Start with a broad audience (1-5 million people) and narrow down based on what works.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 The Goldilocks Rule:</strong> Your audience shouldn't be too broad (wasting money) or too narrow (no reach). Aim for 1-5 million people.
+                </div>
+
+                <h2>Step 3: Create Ad Creatives That Stop the Scroll</h2>
+
+                <div class="step-box">
+                    <span class="step-number">3</span>
+                    <h4>Ad Creatives</h4>
+                    <p>Your creative is the most important element. Here's what works:</p>
+                    <ul>
+                        <li><strong>Video ads:</strong> 15-30 seconds with captions</li>
+                        <li><strong>Carousel ads:</strong> Show multiple products or benefits</li>
+                        <li><strong>Single image:</strong> High-quality, with minimal text (less than 20% text)</li>
+                        <li><strong>Primary text:</strong> Short, clear, and benefit-focused</li>
+                        <li><strong>Headline:</strong> Attention-grabbing and relevant</li>
+                        <li><strong>CTA button:</strong> Clear action (Shop Now, Learn More, Sign Up)</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Test 3-5 different creatives. The one you think will work best often isn't the winner.</p>
+                </div>
+
+                <h2>Step 4: Set a Budget That Works</h2>
+
+                <div class="step-box">
+                    <span class="step-number">4</span>
+                    <h4>Budget Strategy</h4>
+                    <p>Two budget options:</p>
+                    <ul>
+                        <li><strong>Daily budget:</strong> Facebook spends this amount each day</li>
+                        <li><strong>Lifetime budget:</strong> Facebook spends this amount over the entire campaign</li>
+                    </ul>
+                    <p><strong>Start small:</strong> $5-$20 per day to test</p>
+                    <p><strong>Scale gradually:</strong> Increase budget by 20% every 2-3 days if ads are profitable</p>
+                    <p><strong>Pro tip:</strong> Use the "Cost Cap" bidding strategy to control your cost per result.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Smart Budgeting:</strong> Always start small and scale winners. Don't put all your budget into an untested ad.
+                </div>
+
+                <h2>Step 5: Install the Facebook Pixel</h2>
+
+                <div class="step-box">
+                    <span class="step-number">5</span>
+                    <h4>Facebook Pixel</h4>
+                    <p>The Pixel is essential for tracking and optimization. It:</p>
+                    <ul>
+                        <li>Tracks who visits your website</li>
+                        <li>Shows you which ads drive results</li>
+                        <li>Enables retargeting</li>
+                        <li>Builds lookalike audiences</li>
+                    </ul>
+                    <p><strong>How to install:</strong> Add the Pixel code to your website header, or use integrations with Shopify, WordPress, or other platforms.</p>
+                </div>
+
+                <h2>Step 6: Set Up Retargeting</h2>
+
+                <div class="step-box">
+                    <span class="step-number">6</span>
+                    <h4>Retargeting</h4>
+                    <p>Retargeting is where the magic happens. People who visited your site but didn't buy are your best customers.</p>
+                    <ul>
+                        <li><strong>Website visitors:</strong> Show ads to people who visited your site</li>
+                        <li><strong>Cart abandoners:</strong> Remind people who added to cart but didn't checkout</li>
+                        <li><strong>Past customers:</strong> Offer new products or loyalty deals</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Retargeting ads often have 2-5x higher ROI than cold audiences.</p>
+                </div>
+
+                <h2>Step 7: Test, Analyze, and Optimize</h2>
+
+                <div class="step-box">
+                    <span class="step-number">7</span>
+                    <h4>Test & Optimize</h4>
+                    <p>Your first ads probably won't be your best. That's normal. Here's how to improve:</p>
+                    <ul>
+                        <li><strong>Split test (A/B test):</strong> Test different audiences, creatives, and CTAs</li>
+                        <li><strong>Check metrics:</strong> CTR, CPC, ROAS, and conversion rate</li>
+                        <li><strong>Kill losing ads:</strong> Stop ads that aren't performing after 3-5 days</li>
+                        <li><strong>Scale winners:</strong> Increase budget on high-performing ads</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 Key Takeaway:</strong> Facebook Ads is a process of continuous improvement. Your best ad tomorrow will be better than your best ad today.
+                </div>
+
+                <h2>Facebook Ads Checklist</h2>
+
+                <ul>
+                    <li>✅ Set the right campaign objective</li>
+                    <li>✅ Target the right audience (1-5 million people)</li>
+                    <li>✅ Create 3-5 ad creatives</li>
+                    <li>✅ Set a test budget ($5-$20/day)</li>
+                    <li>✅ Install Facebook Pixel</li>
+                    <li>✅ Set up retargeting campaigns</li>
+                    <li>✅ Test, analyze, and optimize</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Facebook advertising isn't magic—it's a skill. And like any skill, it takes practice to master. Start small, learn from your data, and continuously improve.</p>
+
+                <p>The framework above has helped thousands of businesses generate leads and sales. Follow it, and you'll be well on your way to creating Facebook ads that actually convert.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Start?</strong> The best time to start is now. Set up a small test campaign today and start learning what works for your business.
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-4.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-4.html&text=How to Create Facebook Ads That Actually Convert" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-4.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-4.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>Facebook Ads Mistakes That Waste Your Money</h4>
+                        <p>Avoid these common Facebook ad mistakes</p>
+                        <a href="blog-post-5.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Beginner's Guide to Meta Business Manager</h4>
+                        <p>Set up Meta Business Manager step by step</p>
+                        <a href="blog-post-6.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Email Marketing Still Works</h4>
+                        <p>Combine email with Facebook Ads for best results</p>
+                        <a href="blog-post-13.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>How Google SEO Works in 2026 | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Learn how Google SEO works in 2026. Covers EEAT, Helpful Content, AI Search, backlinks, and on-page SEO strategies that actually work.">
+    <meta name="keywords" content="Google SEO 2026, SEO strategies, EEAT, helpful content, AI search, backlinks, on-page SEO, Google ranking factors">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="How Google SEO Works in 2026 | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Learn how Google SEO works in 2026. Covers EEAT, Helpful Content, AI Search, backlinks, and on-page SEO strategies.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-9.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-3.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .topic-card {
+            background: var(--white);
+            border: 1px solid var(--gray-light);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post-content .topic-card .topic-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .blog-post-content .topic-card h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-content .topic-card p {
+            margin-top: 10px;
+            margin-left: 48px;
+        }
+
+        .blog-post-content .topic-card ul {
+            margin-left: 48px;
+        }
+
+        .blog-post-content .success-box {
+            background: rgba(34, 197, 94, 0.08);
+            border-left: 4px solid #22c55e;
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .success-box strong {
+            color: #22c55e;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .topic-card p,
+            .blog-post-content .topic-card ul {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">SEO</span>
+                <span><i class="far fa-calendar"></i> December 15, 2025</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>How Google SEO Works in 2026</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-3.jpg" alt="How Google SEO Works in 2026">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Google's algorithm changes constantly, but the fundamentals remain the same.</strong> In 2026, understanding how Google ranks websites is more important than ever—especially with AI search and new ranking factors.</p>
+
+                <p>This guide breaks down exactly how Google SEO works in 2026, including EEAT, Helpful Content, AI Search, backlinks, and on-page strategies.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>What EEAT means and why it matters</li>
+                    <li>How Google's Helpful Content System works</li>
+                    <li>How AI is changing search</li>
+                    <li>Why backlinks still matter</li>
+                    <li>On-page SEO strategies that work</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 The Truth:</strong> Google's goal is to provide the most helpful, relevant, and trustworthy content to its users. Everything else is a means to that end.
+                </div>
+
+                <h2>1. EEAT: Experience, Expertise, Authority, Trust</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">1</span>
+                    <h4>EEAT</h4>
+                    <p>Google uses EEAT to evaluate content quality. It stands for:</p>
+                    <ul>
+                        <li><strong>Experience:</strong> Does the creator have first-hand experience with the topic?</li>
+                        <li><strong>Expertise:</strong> Does the creator have the knowledge and skills to write about the topic?</li>
+                        <li><strong>Authority:</strong> Is the creator a recognized authority on the topic?</li>
+                        <li><strong>Trust:</strong> Is the content accurate, transparent, and trustworthy?</li>
+                    </ul>
+                    <p><strong>How to improve EEAT:</strong></p>
+                    <ul>
+                        <li>Show your credentials and experience</li>
+                        <li>Include author bios with expertise</li>
+                        <li>Cite reputable sources</li>
+                        <li>Be transparent about affiliations</li>
+                        <li>Update content regularly</li>
+                        <li>Get backlinks from authoritative sites</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> EEAT is especially important for YMYL (Your Money, Your Life) topics like health, finance, and legal advice.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 Key Takeaway:</strong> If you're an expert, show it. If you're not an expert, cite experts and sources.
+                </div>
+
+                <h2>2. Helpful Content System</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">2</span>
+                    <h4>Helpful Content</h4>
+                    <p>Google's Helpful Content System rewards content that is created for people, not just for search engines.</p>
+                    <p><strong>What Google wants:</strong></p>
+                    <ul>
+                        <li>Content that answers questions clearly</li>
+                        <li>Content that provides real value</li>
+                        <li>Content that shows first-hand experience</li>
+                        <li>Content that's original and unique</li>
+                    </ul>
+                    <p><strong>What Google penalizes:</strong></p>
+                    <ul>
+                        <li>Content written primarily for search engines</li>
+                        <li>AI-generated content without human review</li>
+                        <li>Content that's thin or unhelpful</li>
+                        <li>Content that's duplicated across sites</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Focus on solving your audience's problems. If you do that, SEO will follow.</p>
+                </div>
+
+                <div class="success-box">
+                    <strong>✅ Pro Tip:</strong> Write for humans first, Google second. Helpful content naturally ranks higher.
+                </div>
+
+                <h2>3. AI Search</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">3</span>
+                    <h4>AI Search</h4>
+                    <p>Google is integrating AI into search results, including Google's own Gemini AI.</p>
+                    <p><strong>What's changing:</strong></p>
+                    <ul>
+                        <li><strong>AI Overviews:</strong> AI-generated summaries appear at the top of search results</li>
+                        <li><strong>Conversational Search:</strong> Users can have conversations with AI about search topics</li>
+                        <li><strong>Multimodal Search:</strong> Search using text, images, and voice</li>
+                    </ul>
+                    <p><strong>How to optimize for AI Search:</strong></p>
+                    <ul>
+                        <li>Answer questions clearly and directly</li>
+                        <li>Use structured data (schema markup)</li>
+                        <li>Write comprehensive, well-structured content</li>
+                        <li>Include FAQs on your pages</li>
+                        <li>Optimize for featured snippets</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> AI Overviews often pull from the top 10 search results. Focus on ranking in the top 10.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Pro Tip:</strong> AI search is here to stay. Optimize your content to be "AI-friendly" by being clear, structured, and comprehensive.
+                </div>
+
+                <h2>4. Backlinks</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">4</span>
+                    <h4>Backlinks</h4>
+                    <p>Backlinks remain one of Google's top 3 ranking factors. A backlink is a link from another website to yours.</p>
+                    <p><strong>Why backlinks matter:</strong></p>
+                    <ul>
+                        <li>They signal trust and authority to Google</li>
+                        <li>They drive referral traffic</li>
+                        <li>They help Google discover new content</li>
+                    </ul>
+                    <p><strong>How to build quality backlinks:</strong></p>
+                    <ul>
+                        <li><strong>Create great content:</strong> People link to valuable content</li>
+                        <li><strong>Guest blogging:</strong> Write for other websites in your niche</li>
+                        <li><strong>Broken link building:</strong> Find broken links and offer your content as a replacement</li>
+                        <li><strong>HARO (Help a Reporter Out):</strong> Get quoted as a source</li>
+                        <li><strong>Skyscraper technique:</strong> Create content better than what currently exists and reach out to those linking to the original</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Quality over quantity. 10 high-quality backlinks are worth more than 100 low-quality ones.</p>
+                </div>
+
+                <h2>5. On-Page SEO</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">5</span>
+                    <h4>On-Page SEO</h4>
+                    <p>On-page SEO is about optimizing individual pages to rank higher and earn more relevant traffic.</p>
+                    <p><strong>Key on-page factors:</strong></p>
+                    <ul>
+                        <li><strong>Title tags:</strong> Under 60 characters with primary keyword</li>
+                        <li><strong>Meta descriptions:</strong> Under 160 characters with primary keyword</li>
+                        <li><strong>H1 headings:</strong> One per page, with primary keyword</li>
+                        <li><strong>H2/H3 headings:</strong> Use keywords naturally</li>
+                        <li><strong>URL structure:</strong> Short, descriptive, with keywords</li>
+                        <li><strong>Keyword usage:</strong> Use naturally in content, not stuffed</li>
+                        <li><strong>Internal linking:</strong> Link to other pages on your site</li>
+                        <li><strong>Image alt text:</strong> Describe images for accessibility and SEO</li>
+                        <li><strong>Page speed:</strong> Fast-loading pages rank higher</li>
+                        <li><strong>Mobile optimization:</strong> Mobile-friendly is required</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Start with title tags and meta descriptions. They're the easiest to fix and have the biggest impact.</p>
+                </div>
+
+                <div class="success-box">
+                    <strong>✅ Quick Win:</strong> Update your title tags and meta descriptions today. It's the fastest way to improve your SEO.
+                </div>
+
+                <h2>6. Technical SEO</h2>
+
+                <div class="topic-card">
+                    <span class="topic-number">6</span>
+                    <h4>Technical SEO</h4>
+                    <p>Technical SEO ensures your site is crawlable and indexable by Google.</p>
+                    <p><strong>Key technical factors:</strong></p>
+                    <ul>
+                        <li><strong>XML Sitemap:</strong> Helps Google find all your pages</li>
+                        <li><strong>Robots.txt:</strong> Tells Google which pages to crawl</li>
+                        <li><strong>HTTPS:</strong> Secure websites rank higher</li>
+                        <li><strong>Canonical tags:</strong> Prevent duplicate content issues</li>
+                        <li><strong>Structured data:</strong> Helps Google understand your content</li>
+                        <li><strong>404 errors:</strong> Fix broken links</li>
+                        <li><strong>301 redirects:</strong> Redirect old URLs to new ones</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Use Google Search Console to monitor your technical SEO issues.</p>
+                </div>
+
+                <h2>Quick SEO Checklist for 2026</h2>
+
+                <ul>
+                    <li>✅ Show EEAT (Experience, Expertise, Authority, Trust)</li>
+                    <li>✅ Create helpful, people-first content</li>
+                    <li>✅ Optimize for AI Search</li>
+                    <li>✅ Build high-quality backlinks</li>
+                    <li>✅ Optimize title tags and meta descriptions</li>
+                    <li>✅ Use keywords naturally</li>
+                    <li>✅ Ensure fast page speed</li>
+                    <li>✅ Make site mobile-friendly</li>
+                    <li>✅ Use HTTPS</li>
+                    <li>✅ Submit XML sitemap to Google</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>SEO in 2026 is about providing value to real people. Google's algorithm is smarter than ever, and it can tell when you're creating content just for rankings versus content that genuinely helps people.</p>
+
+                <p>Focus on creating the best content you can, building trust with your audience, and making your site technically sound. The rankings will follow.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Rank?</strong> Start with the checklist above. Even implementing a few items can make a big difference in your search rankings.
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-9.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-9.html&text=How Google SEO Works in 2026" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-9.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-9.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>5 Tips for Building Websites That Rank on Google</h4>
+                        <p>Learn simple SEO strategies</p>
+                        <a href="blog-post-7.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Complete Google Business Profile Guide</h4>
+                        <p>Rank locally with your business profile</p>
+                        <a href="blog-post-8.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Why Every Business Needs a Website</h4>
+                        <p>Build trust and attract customers</p>
+                        <a href="blog-post-10.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

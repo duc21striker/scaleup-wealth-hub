@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ====== SEO TAGS ====== -->
+    <title>Beginner's Guide to Meta Business Manager | ScaleUp Wealth Hub</title>
+    <meta name="description" content="Step-by-step guide to setting up Meta Business Manager: Create Business Manager, Install Pixel, Verify Domain, Connect Instagram, Add Page & Create Campaign.">
+    <meta name="keywords" content="Meta Business Manager, Facebook Business Manager, Meta Business Suite, Facebook Pixel setup, Instagram business, Facebook ads setup">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Beginner's Guide to Meta Business Manager | ScaleUp Wealth Hub">
+    <meta property="og:description" content="Step-by-step guide to setting up Meta Business Manager: Create Business Manager, Install Pixel, Verify Domain, Connect Instagram, Add Page & Create Campaign.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-6.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-2.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page {
+            padding: 160px 8% 80px;
+            background: var(--background);
+        }
+
+        .blog-post-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-meta-top {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-meta-top .category {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .blog-post-container h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-featured-image {
+            width: 100%;
+            border-radius: var(--radius);
+            margin: 25px 0 30px;
+            overflow: hidden;
+        }
+
+        .blog-post-featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-post-content {
+            font-size: 17px;
+            line-height: 1.9;
+            color: var(--secondary);
+        }
+
+        .blog-post-content h2 {
+            font-size: 30px;
+            margin: 40px 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content h3 {
+            font-size: 24px;
+            margin: 30px 0 12px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-content ul,
+        .blog-post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 8px;
+        }
+
+        .blog-post-content .highlight-box {
+            background: rgba(216, 178, 53, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .blog-post-content .highlight-box strong {
+            color: var(--primary);
+        }
+
+        .blog-post-content .step-box {
+            background: var(--white);
+            border: 1px solid var(--gray-light);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post-content .step-box .step-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 700;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .blog-post-content .step-box h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-content .step-box p {
+            margin-top: 10px;
+            margin-left: 48px;
+        }
+
+        .blog-post-content .step-box ul {
+            margin-left: 48px;
+        }
+
+        .blog-post-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .blog-post-author img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blog-post-author h4 {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .blog-post-author .author-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .blog-post-author .author-social a {
+            color: var(--gray);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .blog-post-author .author-social a:hover {
+            color: var(--primary);
+        }
+
+        .blog-post-share {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .blog-post-share a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: var(--background);
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blog-post-share a:hover {
+            transform: translateY(-3px);
+        }
+
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+
+        .blog-post-related {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .blog-post-related h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .blog-post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-post-related-grid .related-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-post-related-grid .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .blog-post-related-grid .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-related-grid .related-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .blog-post-related-grid .related-card a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 25px;
+            }
+            .blog-post-container h1 {
+                font-size: 30px;
+            }
+            .blog-post-related-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-post-content .step-box p,
+            .blog-post-content .step-box ul {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ScaleUp Wealth Hub">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== BLOG POST ==================== -->
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <!-- Meta Info -->
+            <div class="blog-post-meta-top">
+                <span class="category">Marketing</span>
+                <span><i class="far fa-calendar"></i> December 28, 2025</span>
+                <span><i class="far fa-clock"></i> 10 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <!-- Title -->
+            <h1>Beginner's Guide to Meta Business Manager</h1>
+
+            <!-- Featured Image -->
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-2.jpg" alt="Beginner's Guide to Meta Business Manager">
+            </div>
+
+            <!-- Content -->
+            <div class="blog-post-content">
+                <p><strong>Meta Business Manager is the foundation of any serious Facebook advertising strategy.</strong> It's where you manage your Facebook Page, Instagram account, ad campaigns, Pixel, and team members all in one place.</p>
+
+                <p>If you're ready to run Facebook ads professionally, you need to set up Business Manager. This step-by-step guide will walk you through everything.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>How to create a Meta Business Manager account</li>
+                    <li>How to install the Facebook Pixel</li>
+                    <li>How to verify your domain</li>
+                    <li>How to connect Instagram</li>
+                    <li>How to add a Page and create a campaign</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 Important:</strong> Meta Business Manager is free. You do not need to spend any money to set it up.
+                </div>
+
+                <h2>What is Meta Business Manager?</h2>
+
+                <p>Meta Business Manager (formerly Facebook Business Manager) is a free tool that helps you:</p>
+
+                <ul>
+                    <li><strong>Manage assets:</strong> Pages, ad accounts, Instagram accounts, and Pixels</li>
+                    <li><strong>Control access:</strong> Give team members specific permissions without sharing login details</li>
+                    <li><strong>Run ads:</strong> Create and manage campaigns at scale</li>
+                    <li><strong>Track performance:</strong> Monitor analytics and ROI</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🎯 Think of it as:</strong> The control center for all your Meta (Facebook/Instagram) business activities.
+                </div>
+
+                <h2>Step 1: Create Your Meta Business Manager Account</h2>
+
+                <div class="step-box">
+                    <span class="step-number">1</span>
+                    <h4>Create Business Manager</h4>
+                    <p>Follow these steps:</p>
+                    <ol>
+                        <li>Go to <strong>business.facebook.com</strong></li>
+                        <li>Click <strong>"Create Account"</strong></li>
+                        <li>Enter your <strong>business name</strong> and your <strong>name</strong></li>
+                        <li>Enter your <strong>business email</strong></li>
+                        <li>Click <strong>"Submit"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Use your business email, not your personal Facebook email.</p>
+                </div>
+
+                <h2>Step 2: Add Your Facebook Page</h2>
+
+                <div class="step-box">
+                    <span class="step-number">2</span>
+                    <h4>Add Your Page</h4>
+                    <p>Once your account is created:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Accounts"</strong> → <strong>"Pages"</strong></li>
+                        <li>Click <strong>"Add"</strong></li>
+                        <li>Select <strong>"Add a Page"</strong></li>
+                        <li>Search for your Facebook Page</li>
+                        <li>Click <strong>"Add Page"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> You can add multiple Pages if you have more than one business.</p>
+                </div>
+
+                <h2>Step 3: Connect Your Instagram Account</h2>
+
+                <div class="step-box">
+                    <span class="step-number">3</span>
+                    <h4>Connect Instagram</h4>
+                    <p>To run Instagram ads, you need to connect your account:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Accounts"</strong> → <strong>"Instagram Accounts"</strong></li>
+                        <li>Click <strong>"Add"</strong></li>
+                        <li>Select <strong>"Add an Instagram Account"</strong></li>
+                        <li>Enter your Instagram login details</li>
+                        <li>Click <strong>"Connect"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Make sure your Instagram account is set to "Business" or "Creator" mode.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Pro Tip:</strong> You can also connect Instagram by linking it through your Facebook Page settings.
+                </div>
+
+                <h2>Step 4: Create Your Ad Account</h2>
+
+                <div class="step-box">
+                    <span class="step-number">4</span>
+                    <h4>Create Ad Account</h4>
+                    <p>You need an ad account to run campaigns:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Accounts"</strong> → <strong>"Ad Accounts"</strong></li>
+                        <li>Click <strong>"Add"</strong></li>
+                        <li>Select <strong>"Create a New Ad Account"</strong></li>
+                        <li>Fill in your business details</li>
+                        <li>Set your <strong>currency</strong> and <strong>timezone</strong></li>
+                        <li>Click <strong>"Create"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Your timezone and currency cannot be changed later—choose carefully.</p>
+                </div>
+
+                <h2>Step 5: Install the Facebook Pixel</h2>
+
+                <div class="step-box">
+                    <span class="step-number">5</span>
+                    <h4>Install Pixel</h4>
+                    <p>The Pixel tracks website visitors and conversions:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Data Sources"</strong> → <strong>"Pixels"</strong></li>
+                        <li>Click <strong>"Add"</strong> → <strong>"Create a New Pixel"</strong></li>
+                        <li>Name your Pixel (use your business name)</li>
+                        <li>Click <strong>"Create"</strong></li>
+                        <li>Choose how to install:
+                            <ul>
+                                <li><strong>Install manually:</strong> Copy the code and paste it into your website's header</li>
+                                <li><strong>Use a partner:</strong> Shopify, WordPress, or other platform integration</li>
+                                <li><strong>Email instructions:</strong> Send the code to a developer</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> The Pixel is the most important tracking tool you'll use. Install it before running any ads.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>⚠️ Critical:</strong> Without the Pixel, your ads will be 50-80% less effective. Install it immediately.
+                </div>
+
+                <h2>Step 6: Verify Your Domain</h2>
+
+                <div class="step-box">
+                    <span class="step-number">6</span>
+                    <h4>Verify Domain</h4>
+                    <p>Domain verification gives you more control over your website links:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Brand Safety"</strong> → <strong>"Domains"</strong></li>
+                        <li>Click <strong>"Add"</strong></li>
+                        <li>Enter your website domain (e.g., yourwebsite.com)</li>
+                        <li>Choose a verification method:
+                            <ul>
+                                <li><strong>Meta-tag verification:</strong> Add a code to your website's header</li>
+                                <li><strong>DNS verification:</strong> Add a TXT record to your domain</li>
+                                <li><strong>File upload:</strong> Upload an HTML file to your website</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>"Verify"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Meta-tag verification is the easiest method for most people.</p>
+                </div>
+
+                <h2>Step 7: Add Team Members</h2>
+
+                <div class="step-box">
+                    <span class="step-number">7</span>
+                    <h4>Add Team Members</h4>
+                    <p>If you work with others, you can add them to Business Manager:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Users"</strong> → <strong>"People"</strong></li>
+                        <li>Click <strong>"Add"</strong></li>
+                        <li>Enter the person's email</li>
+                        <li>Choose their role:
+                            <ul>
+                                <li><strong>Admin:</strong> Full control</li>
+                                <li><strong>Employee:</strong> Limited access</li>
+                            </ul>
+                        </li>
+                        <li>Assign permissions to specific assets (Pages, ad accounts, etc.)</li>
+                        <li>Click <strong>"Send Request"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Never share your personal login. Use Business Manager to give team members controlled access.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 Best Practice:</strong> Always use Business Manager to manage team access. It's more secure and gives you full control.
+                </div>
+
+                <h2>Step 8: Create Your First Campaign</h2>
+
+                <div class="step-box">
+                    <span class="step-number">8</span>
+                    <h4>Create Campaign</h4>
+                    <p>Now you're ready to run your first ad:</p>
+                    <ol>
+                        <li>In Business Manager, go to <strong>"Ads Manager"</strong></li>
+                        <li>Click <strong>"Create"</strong></li>
+                        <li>Choose your <strong>campaign objective</strong> (Awareness, Traffic, Engagement, Leads, Sales)</li>
+                        <li>Set your <strong>budget</strong> and <strong>schedule</strong></li>
+                        <li>Choose your <strong>target audience</strong></li>
+                        <li>Create your <strong>ad creative</strong> (image, video, text, headline, CTA)</li>
+                        <li>Review and click <strong>"Publish"</strong></li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> Start with a small budget ($5-$20/day) to test what works before scaling up.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Launch?</strong> Your Meta Business Manager is now fully set up. Start with a small test campaign to learn the platform.
+                </div>
+
+                <h2>Quick Reference Checklist</h2>
+
+                <ul>
+                    <li>✅ Create Meta Business Manager account</li>
+                    <li>✅ Add Facebook Page</li>
+                    <li>✅ Connect Instagram Account</li>
+                    <li>✅ Create Ad Account</li>
+                    <li>✅ Install Facebook Pixel</li>
+                    <li>✅ Verify Domain</li>
+                    <li>✅ Add Team Members (if needed)</li>
+                    <li>✅ Create First Campaign</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Setting up Meta Business Manager is one of the best investments of time you'll make for your business. It gives you full control over your Facebook and Instagram advertising, with all the tools you need to track, optimize, and scale your campaigns.</p>
+
+                <p>The setup process takes 30-60 minutes, but it's well worth it. Once you're set up, you'll have a professional advertising infrastructure that can grow with your business.</p>
+
+                <div class="highlight-box">
+                    <strong>🎯 Key Takeaway:</strong> Meta Business Manager is free, essential, and the foundation of professional Facebook advertising. Set it up today.
+                </div>
+            </div>
+
+            <!-- Author Section -->
+            <div class="blog-post-author">
+                <img src="assets/images/team-1.jpg" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills and grow their businesses.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-6.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-6.html&text=Beginner's Guide to Meta Business Manager" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-6.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-6.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card">
+                        <h4>How to Create Facebook Ads That Convert</h4>
+                        <p>Learn the proven framework for successful ads</p>
+                        <a href="blog-post-4.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Facebook Ads Mistakes That Waste Your Money</h4>
+                        <p>Avoid these common Facebook ad mistakes</p>
+                        <a href="blog-post-5.html">Read More →</a>
+                    </div>
+                    <div class="related-card">
+                        <h4>Complete Google Business Profile Guide</h4>
+                        <p>Rank locally with your business profile</p>
+                        <a href="blog-post-8.html">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

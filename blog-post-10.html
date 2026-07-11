@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Why Every Business Needs a Website | ScaleUp Wealth Hub</title>
+    <meta name="description" content="A professional website builds trust, attracts customers, and helps your business grow online. Learn why having a website is essential in 2026.">
+    <meta name="keywords" content="business website, professional website, website benefits, online presence, business growth">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Why Every Business Needs a Website | ScaleUp Wealth Hub">
+    <meta property="og:description" content="A professional website builds trust, attracts customers, and helps your business grow online.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://duc21striker.github.io/scaleup-wealth-hub/blog-post-10.html">
+    <meta property="og:image" content="https://duc21striker.github.io/scaleup-wealth-hub/assets/images/blog-3.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .blog-post-page { padding: 160px 8% 80px; background: var(--background); }
+        .blog-post-container { max-width: 850px; margin: 0 auto; background: var(--white); border-radius: var(--radius); padding: 50px; box-shadow: var(--shadow); }
+        .blog-post-meta-top { display: flex; gap: 20px; font-size: 14px; color: var(--gray); margin-bottom: 20px; flex-wrap: wrap; }
+        .blog-post-meta-top .category { background: var(--primary); color: var(--white); padding: 2px 16px; border-radius: 50px; font-weight: 600; font-size: 12px; }
+        .blog-post-container h1 { font-size: 42px; line-height: 1.2; margin-bottom: 20px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-featured-image { width: 100%; border-radius: var(--radius); margin: 25px 0 30px; overflow: hidden; }
+        .blog-post-featured-image img { width: 100%; height: auto; display: block; }
+        .blog-post-content { font-size: 17px; line-height: 1.9; color: var(--secondary); }
+        .blog-post-content h2 { font-size: 30px; margin: 40px 0 15px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-content h3 { font-size: 24px; margin: 30px 0 12px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-content ul, .blog-post-content ol { margin: 15px 0 20px 25px; }
+        .blog-post-content li { margin-bottom: 8px; }
+        .blog-post-content .highlight-box { background: rgba(216, 178, 53, 0.08); border-left: 4px solid var(--primary); padding: 20px 25px; border-radius: 0 12px 12px 0; margin: 25px 0; }
+        .blog-post-content .highlight-box strong { color: var(--primary); }
+        .blog-post-content .benefit-card { background: var(--white); border: 1px solid var(--gray-light); padding: 25px; border-radius: 12px; margin: 20px 0; }
+        .blog-post-content .benefit-card .benefit-icon { font-size: 28px; color: var(--primary); margin-right: 12px; }
+        .blog-post-content .benefit-card h4 { display: inline-block; font-size: 20px; font-family: 'Poppins', sans-serif; }
+        .blog-post-content .benefit-card p { margin-top: 10px; margin-left: 40px; }
+        .blog-post-author { display: flex; align-items: center; gap: 20px; padding: 30px 0; margin-top: 40px; border-top: 1px solid var(--gray-light); border-bottom: 1px solid var(--gray-light); }
+        .blog-post-author img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; }
+        .blog-post-author h4 { font-size: 18px; font-family: 'Poppins', sans-serif; }
+        .blog-post-author p { color: var(--gray); font-size: 14px; }
+        .blog-post-author .author-social { display: flex; gap: 10px; margin-top: 5px; }
+        .blog-post-author .author-social a { color: var(--gray); transition: var(--transition); font-size: 18px; }
+        .blog-post-author .author-social a:hover { color: var(--primary); }
+        .blog-post-share { display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+        .blog-post-share a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 50px; background: var(--background); color: var(--secondary); transition: var(--transition); font-size: 14px; text-decoration: none; }
+        .blog-post-share a:hover { transform: translateY(-3px); }
+        .blog-post-share .share-facebook:hover { background: #1877f2; color: white; }
+        .blog-post-share .share-twitter:hover { background: #000; color: white; }
+        .blog-post-share .share-linkedin:hover { background: #0a66c2; color: white; }
+        .blog-post-share .share-whatsapp:hover { background: #25d366; color: white; }
+        .blog-post-related { margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--gray-light); }
+        .blog-post-related h3 { font-size: 28px; margin-bottom: 25px; font-family: 'Cormorant Garamond', serif; }
+        .blog-post-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .blog-post-related-grid .related-card { background: var(--background); padding: 20px; border-radius: 12px; transition: var(--transition); }
+        .blog-post-related-grid .related-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+        .blog-post-related-grid .related-card h4 { font-size: 16px; margin-bottom: 8px; font-family: 'Poppins', sans-serif; }
+        .blog-post-related-grid .related-card p { font-size: 14px; color: var(--gray); }
+        .blog-post-related-grid .related-card a { color: var(--primary); font-weight: 600; font-size: 14px; }
+        @media (max-width: 768px) {
+            .blog-post-container { padding: 25px; }
+            .blog-post-container h1 { font-size: 30px; }
+            .blog-post-related-grid { grid-template-columns: 1fr; }
+            .blog-post-content .benefit-card p { margin-left: 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"><div class="loader-spinner"></div></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="assets/images/12.png" alt="ScaleUp Wealth Hub"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-tools.html">AI Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog-post-page">
+        <div class="blog-post-container">
+            <div class="blog-post-meta-top">
+                <span class="category">Website</span>
+                <span><i class="far fa-calendar"></i> December 10, 2025</span>
+                <span><i class="far fa-clock"></i> 6 min read</span>
+                <span><i class="far fa-user"></i> By Divine Uka</span>
+            </div>
+
+            <h1>Why Every Business Needs a Website</h1>
+
+            <div class="blog-post-featured-image">
+                <img src="assets/images/blog-3.jpg" alt="Why Every Business Needs a Website">
+            </div>
+
+            <div class="blog-post-content">
+                <p><strong>In 2026, having a website isn't optional—it's essential.</strong> Your website is your digital storefront, open 24/7, reaching customers around the world.</p>
+
+                <p>Here's why every business needs a professional website.</p>
+
+                <h2>What You'll Learn</h2>
+                <ul>
+                    <li>Why a website builds trust and credibility</li>
+                    <li>How a website attracts new customers</li>
+                    <li>Why social media isn't enough</li>
+                    <li>How a website helps you grow</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>💡 The Truth:</strong> 80% of people research a business online before making a purchase. If you don't have a website, you're invisible to them.
+                </div>
+
+                <h2>1. Builds Trust and Credibility</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">✅</span>
+                    <h4>Trust & Credibility</h4>
+                    <p>A professional website shows you're serious about your business. It gives customers confidence that you're legitimate and reliable. Without a website, many people will assume you're not a real business.</p>
+                </div>
+
+                <h2>2. Attracts New Customers</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">📈</span>
+                    <h4>New Customers</h4>
+                    <p>People search online for products and services every day. A website helps people find you when they're looking for what you offer. It's your most powerful marketing tool.</p>
+                </div>
+
+                <h2>3. Social Media Isn't Enough</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">⚠️</span>
+                    <h4>Social Media Isn't Enough</h4>
+                    <p>Social media platforms can change their algorithms, shut down, or disappear. Your website is the one thing you own and control completely. Don't rely solely on Facebook, Instagram, or TikTok.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 Key Takeaway:</strong> You don't own your social media followers—you own your website.
+                </div>
+
+                <h2>4. Available 24/7</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🕐</span>
+                    <h4>Always Open</h4>
+                    <p>Your website works around the clock, even when you're sleeping. Customers can learn about your business, view products, and contact you at any time.</p>
+                </div>
+
+                <h2>5. Showcases Your Work</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🖼️</span>
+                    <h4>Showcase Your Work</h4>
+                    <p>A website is the perfect place to display your portfolio, testimonials, and case studies. Show potential customers why they should choose you.</p>
+                </div>
+
+                <h2>6. Helps You Compete</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🏆</span>
+                    <h4>Stay Competitive</h4>
+                    <p>Your competitors almost certainly have websites. If you don't, you're losing customers to them. A website levels the playing field.</p>
+                </div>
+
+                <h2>7. Saves Time</h2>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">⏱️</span>
+                    <h4>Saves Time</h4>
+                    <p>A website answers common questions, shows your offerings, and helps customers make decisions—so you don't have to repeat the same information over and over.</p>
+                </div>
+
+                <h2>Final Thoughts</h2>
+
+                <p>A website is one of the best investments you can make for your business. It builds trust, attracts customers, and helps you grow. If you don't have one yet, now is the time to start.</p>
+
+                <div class="highlight-box">
+                    <strong>🚀 Ready to Build?</strong> You don't need to be a developer. Start simple and improve over time. The most important step is to start.
+                </div>
+            </div>
+
+            <div class="blog-post-author">
+                <img src="assets/images/12.png" alt="Divine Uka">
+                <div>
+                    <h4>Divine Uka</h4>
+                    <p>Founder & Lead Instructor at ScaleUp Wealth Hub. AI enthusiast and digital marketing expert helping people build online skills.</p>
+                    <div class="author-social">
+                        <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post-share">
+                <span style="font-weight:600; display:flex; align-items:center;">Share this article:</span>
+                <a href="https://facebook.com/sharer/sharer.php?u=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-10.html" target="_blank" class="share-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-10.html&text=Why Every Business Needs a Website" target="_blank" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://linkedin.com/sharing/share-offsite/?url=https://duc21striker.github.io/scaleup-wealth-hub/blog-post-10.html" target="_blank" class="share-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/?text=Check%20out%20this%20article%3A%20https://duc21striker.github.io/scaleup-wealth-hub/blog-post-10.html" target="_blank" class="share-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <div class="blog-post-related">
+                <h3>You Might Also Like</h3>
+                <div class="blog-post-related-grid">
+                    <div class="related-card"><h4>How I Build Modern Websites for Businesses</h4><p>Learn my website building process</p><a href="blog-post-11.html">Read More →</a></div>
+                    <div class="related-card"><h4>Free Tools Every Web Designer Should Know</h4><p>Essential free tools</p><a href="blog-post-12.html">Read More →</a></div>
+                    <div class="related-card"><h4>5 Tips for Building Websites That Rank on Google</h4><p>SEO tips for websites</p><a href="blog-post-7.html">Read More →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Get <span class="highlight">Latest Articles</span> in Your Inbox</h2>
+            <p>Subscribe to our newsletter and never miss an update on AI tools and digital marketing strategies.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/12.png" alt="ScaleUp Wealth Hub">
+                <p>Helping individuals and businesses grow using AI, digital marketing, website development, and modern technology.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/ScaleUpWealthHub" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/scaleupwealthhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@scaleupwealthhub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ai-tools.html">AI Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">AI Consulting</a></li>
+                    <li><a href="services.html">Facebook Ads</a></li>
+                    <li><a href="services.html">Website Design</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:theexaminationgamer@gmail.com">theexaminationgamer@gmail.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ScaleUp Wealth Hub. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
