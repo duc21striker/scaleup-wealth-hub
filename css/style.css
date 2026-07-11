@@ -2031,3 +2031,6 @@ body.dark .darkBtn {
 body.dark .darkBtn i {
     transform: rotate(0deg);
 }
+
+/* Force dark mode button to show */
+.darkBtn { display: flex !important; }
