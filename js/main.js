@@ -203,37 +203,31 @@ backToTopBtn.addEventListener('click', () => {
 });
 
 // ==========================
-// DARK MODE - FIXED!
+// DARK MODE - SIMPLIFIED & FIXED
 // ==========================
-// Check if dark mode button already exists, if not create it
-let darkBtn = document.querySelector('.darkBtn');
+const darkToggle = document.getElementById('darkModeToggle');
 
-if (!darkBtn) {
-    darkBtn = document.createElement('button');
-    darkBtn.className = 'darkBtn';
-    darkBtn.setAttribute('aria-label', 'Toggle dark mode');
-    document.body.appendChild(darkBtn);
+if (darkToggle) {
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+        darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+        darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+
+    // Toggle dark mode
+    darkToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark');
+        const isDark = document.body.classList.contains('dark');
+        
+        // Update icon
+        this.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        
+        // Save preference
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
 }
-
-// Set initial icon
-function updateDarkIcon() {
-    const isDark = document.body.classList.contains('dark');
-    darkBtn.innerHTML = isDark ? '☀️' : '🌙';
-}
-
-// Load saved theme
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-}
-updateDarkIcon();
-
-// Toggle dark mode
-darkBtn.onclick = function() {
-    document.body.classList.toggle('dark');
-    const isDark = document.body.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    updateDarkIcon();
-};
 
 // ==========================
 // NAVBAR ACTIVE LINK
