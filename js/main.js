@@ -7,7 +7,7 @@
 // LOADER
 // ==========================
 window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
+    document.body.classList.add('loaded');
 });
 
 // ==========================
@@ -16,11 +16,11 @@ window.addEventListener('load', () => {
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 });
 
 // ==========================
@@ -30,89 +30,87 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
 if (mobileMenuBtn) {
-  mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    mobileMenuBtn.innerHTML = navLinks.classList.contains('open') 
-      ? '<i class="fas fa-times"></i>' 
-      : '<i class="fas fa-bars"></i>';
-  });
-
-  // Close menu when clicking a link
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        mobileMenuBtn.innerHTML = navLinks.classList.contains('open') 
+            ? '<i class="fas fa-times"></i>' 
+            : '<i class="fas fa-bars"></i>';
     });
-  });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+    });
 }
 
 // ==========================
 // SMOOTH SCROLL
 // ==========================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href === '#') return;
-    
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
 });
 
 // ==========================
 // COUNTER ANIMATION
 // ==========================
 function animateCounter(elementId, target, duration = 2000) {
-  const element = document.getElementById(elementId);
-  if (!element) return;
+    const element = document.getElementById(elementId);
+    if (!element) return;
 
-  const start = 0;
-  const increment = target / (duration / 16);
-  let current = start;
+    const start = 0;
+    const increment = target / (duration / 16);
+    let current = start;
 
-  const timer = setInterval(() => {
-    current += increment;
-    if (current >= target) {
-      element.textContent = target;
-      clearInterval(timer);
-    } else {
-      element.textContent = Math.floor(current);
-    }
-  }, 16);
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
 }
 
-// Animate counters when they come into view
 function initCounters() {
-  const counters = [
-    { id: 'students', target: 1200 },
-    { id: 'projects', target: 350 },
-    { id: 'articles', target: 180 },
-    { id: 'tools', target: 80 }
-  ];
+    const counters = [
+        { id: 'students', target: 1200 },
+        { id: 'projects', target: 350 },
+        { id: 'articles', target: 180 },
+        { id: 'tools', target: 80 }
+    ];
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        const counter = counters.find(c => c.id === id);
-        if (counter) {
-          animateCounter(id, counter.target);
-          observer.unobserve(entry.target);
-        }
-      }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                const counter = counters.find(c => c.id === id);
+                if (counter) {
+                    animateCounter(id, counter.target);
+                    observer.unobserve(entry.target);
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element) observer.observe(element);
     });
-  }, { threshold: 0.5 });
-
-  counters.forEach(({ id }) => {
-    const element = document.getElementById(id);
-    if (element) observer.observe(element);
-  });
 }
 
 initCounters();
@@ -123,19 +121,19 @@ initCounters();
 const revealElements = document.querySelectorAll('.card, .service-card, .blog-card, .testimonial-card, .why-choose, .newsletter-content');
 
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
-  });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
 }, { 
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
 });
 
 revealElements.forEach(el => {
-  el.classList.add('reveal');
-  revealObserver.observe(el);
+    el.classList.add('reveal');
+    revealObserver.observe(el);
 });
 
 // ==========================
@@ -144,43 +142,40 @@ revealElements.forEach(el => {
 const newsletterForm = document.querySelector('.newsletter-form');
 
 if (newsletterForm) {
-  newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailInput = newsletterForm.querySelector('input[type="email"]');
-    const email = emailInput.value.trim();
+    newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
 
-    if (email === '') {
-      emailInput.style.border = '2px solid #ef4444';
-      return;
-    }
+        if (email === '') {
+            emailInput.style.border = '2px solid #ef4444';
+            return;
+        }
 
-    if (!email.includes('@') || !email.includes('.')) {
-      emailInput.style.border = '2px solid #ef4444';
-      return;
-    }
+        if (!email.includes('@') || !email.includes('.')) {
+            emailInput.style.border = '2px solid #ef4444';
+            return;
+        }
 
-    emailInput.style.border = 'none';
-    
-    // Show success message
-    const originalText = newsletterForm.querySelector('.btn-primary').innerHTML;
-    const btn = newsletterForm.querySelector('.btn-primary');
-    btn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
-    btn.style.background = '#22c55e';
-    
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.background = '';
-      newsletterForm.reset();
-    }, 3000);
+        emailInput.style.border = 'none';
+        
+        const originalText = newsletterForm.querySelector('.btn-primary').innerHTML;
+        const btn = newsletterForm.querySelector('.btn-primary');
+        btn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+        btn.style.background = '#22c55e';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+            newsletterForm.reset();
+        }, 3000);
 
-    // Here you would typically send the email to your backend
-    console.log('Newsletter subscription:', email);
-  });
+        console.log('Newsletter subscription:', email);
+    });
 
-  // Remove error state on input
-  newsletterForm.querySelector('input[type="email"]').addEventListener('input', function() {
-    this.style.border = 'none';
-  });
+    newsletterForm.querySelector('input[type="email"]').addEventListener('input', function() {
+        this.style.border = 'none';
+    });
 }
 
 // ==========================
@@ -193,82 +188,71 @@ backToTopBtn.setAttribute('aria-label', 'Back to top');
 document.body.appendChild(backToTopBtn);
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 500) {
-    backToTopBtn.classList.add('visible');
-  } else {
-    backToTopBtn.classList.remove('visible');
-  }
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
 });
 
 backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
 
 // ==========================
-// DARK MODE
+// DARK MODE - FIXED!
 // ==========================
-const darkBtn = document.createElement("button");
-darkBtn.innerHTML = "🌙";
-darkBtn.className = "darkBtn";
-document.body.appendChild(darkBtn);
+// Check if dark mode button already exists, if not create it
+let darkBtn = document.querySelector('.darkBtn');
 
-darkBtn.onclick = () => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem("theme",
-        document.body.classList.contains("dark")
-        ? "dark"
-        : "light"
-    );
-};
-
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
+if (!darkBtn) {
+    darkBtn = document.createElement('button');
+    darkBtn.className = 'darkBtn';
+    darkBtn.setAttribute('aria-label', 'Toggle dark mode');
+    document.body.appendChild(darkBtn);
 }
+
+// Set initial icon
+function updateDarkIcon() {
+    const isDark = document.body.classList.contains('dark');
+    darkBtn.innerHTML = isDark ? '☀️' : '🌙';
+}
+
+// Load saved theme
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+}
+updateDarkIcon();
+
+// Toggle dark mode
+darkBtn.onclick = function() {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    updateDarkIcon();
+};
 
 // ==========================
 // NAVBAR ACTIVE LINK
 // ==========================
 function setActiveNavLink() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-links a');
-  
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (linkPath === currentPath) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
 }
 
 setActiveNavLink();
-
-// ==========================
-// PARALLAX HERO EFFECT (optional)
-// ==========================
-const hero = document.querySelector('.hero');
-if (hero) {
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const heroContent = hero.querySelector('.hero-content');
-    const heroImage = hero.querySelector('.hero-image');
-    
-    if (heroContent && scrolled < hero.offsetHeight) {
-      heroContent.style.transform = `translateY(${scrolled * 0.05}px)`;
-      heroImage.style.transform = `translateY(${scrolled * 0.08}px)`;
-    }
-  });
-}
-
-// ==========================
-// CONSOLE BRANDING
-// ==========================
-console.log('%c🚀 ScaleUp Wealth Hub', 'font-size: 24px; font-weight: bold; color: #D8B235;');
-console.log('%cBuilt with ❤️ | AI • Digital Marketing • Online Growth', 'font-size: 14px; color: #6B6B6B;');
 
 // ==========================
 // FAQ ACCORDION
@@ -278,12 +262,10 @@ document.querySelectorAll('.faq-question').forEach(question => {
         const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
         
-        // Close all FAQ items
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
         });
         
-        // Open clicked one if it wasn't active
         if (!isActive) {
             faqItem.classList.add('active');
         }
@@ -295,7 +277,6 @@ document.querySelectorAll('.faq-question').forEach(question => {
 // ==========================
 document.querySelectorAll('.blog-categories .category-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remove active from all
         document.querySelectorAll('.blog-categories .category-btn').forEach(b => {
             b.classList.remove('active');
         });
@@ -319,7 +300,6 @@ document.querySelectorAll('.blog-categories .category-btn').forEach(btn => {
 // ==========================
 document.querySelectorAll('.tools-categories .category-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remove active from all
         document.querySelectorAll('.tools-categories .category-btn').forEach(b => {
             b.classList.remove('active');
         });
@@ -355,7 +335,6 @@ if (contactForm) {
             return;
         }
         
-        // Show success message
         const btn = contactForm.querySelector('.btn');
         const originalText = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
@@ -367,7 +346,6 @@ if (contactForm) {
             contactForm.reset();
         }, 3000);
         
-        // Here you would typically send the form data to your backend
         console.log('Contact form submitted:', { name, email, message });
     });
 }
@@ -385,3 +363,9 @@ document.querySelectorAll('.page-btn').forEach(btn => {
         btn.classList.add('active');
     });
 });
+
+// ==========================
+// CONSOLE BRANDING
+// ==========================
+console.log('%c🚀 ScaleUp Wealth Hub', 'font-size: 24px; font-weight: bold; color: #D8B235;');
+console.log('%cBuilt with ❤️ | AI • Digital Marketing • Online Growth', 'font-size: 14px; color: #6B6B6B;');
