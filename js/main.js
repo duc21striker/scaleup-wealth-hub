@@ -210,25 +210,22 @@ backToTopBtn.addEventListener('click', () => {
 // ==========================
 // DARK MODE
 // ==========================
-const darkModeBtn = document.createElement('button');
-darkModeBtn.className = 'dark-mode-btn';
-darkModeBtn.innerHTML = '🌙';
-darkModeBtn.setAttribute('aria-label', 'Toggle dark mode');
-document.body.appendChild(darkModeBtn);
+const darkBtn = document.createElement("button");
+darkBtn.innerHTML = "🌙";
+darkBtn.className = "darkBtn";
+document.body.appendChild(darkBtn);
 
-function toggleDarkMode() {
-  document.body.classList.toggle('dark');
-  const isDark = document.body.classList.contains('dark');
-  darkModeBtn.innerHTML = isDark ? '☀️' : '🌙';
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-}
+darkBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme",
+        document.body.classList.contains("dark")
+        ? "dark"
+        : "light"
+    );
+};
 
-darkModeBtn.addEventListener('click', toggleDarkMode);
-
-// Check saved theme
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark');
-  darkModeBtn.innerHTML = '☀️';
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
 }
 
 // ==========================
