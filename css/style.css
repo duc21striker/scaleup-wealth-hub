@@ -1982,3 +1982,12 @@ body.dark .nav-links.open {
         font-size: 32px;
     }
 }
+
+.why-choose-image {
+    background: url('../assets/images/why-choose.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    min-height: 400px;
+    position: relative;
+}
