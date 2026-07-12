@@ -363,3 +363,46 @@ document.querySelectorAll('.page-btn').forEach(btn => {
 // ==========================
 console.log('%c🚀 ScaleUp Wealth Hub', 'font-size: 24px; font-weight: bold; color: #D8B235;');
 console.log('%cBuilt with ❤️ | AI • Digital Marketing • Online Growth', 'font-size: 14px; color: #6B6B6B;');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    const progressBar = document.querySelector('.scroll-progress');
+    if (progressBar) progressBar.style.width = progress + '%';
+});
+
+function createParticles() {
+    const canvas = document.createElement('canvas');
+    canvas.id = 'particles-canvas';
+    document.querySelector('.hero').appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.offsetWidth;
+    canvas.height = canvas.parentElement.offsetHeight;
+
+    const particles = [];
+    for (let i = 0; i < 50; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 3 + 1,
+            speed: Math.random() * 0.5 + 0.2,
+            opacity: Math.random() * 0.5 + 0.2
+        });
+    }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(216, 178, 53, ${p.opacity})`;
+            ctx.fill();
+            p.y -= p.speed;
+            if (p.y < 0) { p.y = canvas.height; p.x = Math.random() * canvas.width; }
+        });
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+}
+createParticles();
