@@ -2120,3 +2120,33 @@ body {
 a, button, .btn, .card, .service-card {
     cursor: pointer;
 }
+
+/* Dark Mode Button */
+.darkBtn {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #231E22;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.darkBtn:hover {
+    transform: scale(1.1);
+}
+
+body.dark .darkBtn {
+    background: #D8B235;
+    color: #231E22;
+}
