@@ -115,7 +115,15 @@
             <button class="category-btn" data-category="resources">Resources</button>
         </div>
 
-        <div class="grid grid-3 blog-grid">
+        <div class="grid grid-3 blog-grid" id="blogGrid">
+
+            <!-- Load More Button -->
+<div class="load-more-container" style="text-align: center; margin-top: 40px;">
+    <button class="btn btn-primary" id="loadMoreBtn" style="padding: 14px 40px; font-size: 16px;">
+        <i class="fas fa-plus-circle"></i> Load More Posts
+    </button>
+    <p style="margin-top: 12px; color: #888; font-size: 14px;" id="postsCounter">Showing 9 of 25 posts</p>
+</div>
 
             <!-- POST 1 -->
             <article class="blog-post" data-category="ai-tools">
@@ -626,6 +634,60 @@
 
 <!-- ==================== SCRIPTS ==================== -->
 <script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const blogGrid = document.getElementById('blogGrid');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const postsCounter = document.getElementById('postsCounter');
+    
+    if (!blogGrid) return;
+    
+    // Get all blog posts
+    const posts = blogGrid.querySelectorAll('.blog-post');
+    const postsPerPage = 9;
+    let visibleCount = postsPerPage;
+    const totalPosts = posts.length;
+    
+    // Hide posts after the first 9
+    posts.forEach((post, index) => {
+        if (index >= postsPerPage) {
+            post.style.display = 'none';
+        }
+    });
+    
+    // Update counter
+    if (postsCounter) {
+        postsCounter.textContent = `Showing ${visibleCount} of ${totalPosts} posts`;
+    }
+    
+    // Load More button click
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            const start = visibleCount;
+            const end = Math.min(start + postsPerPage, totalPosts);
+            
+            // Show next batch
+            for (let i = start; i < end; i++) {
+                posts[i].style.display = 'block';
+            }
+            
+            visibleCount = end;
+            
+            // Update counter
+            if (postsCounter) {
+                postsCounter.textContent = `Showing ${visibleCount} of ${totalPosts} posts`;
+            }
+            
+            // If all posts are shown, disable button
+            if (visibleCount >= totalPosts) {
+                loadMoreBtn.disabled = true;
+                loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> All Posts Loaded';
+                loadMoreBtn.style.background = '#22c55e';
+            }
+        });
+    }
+});
+</script>
 </body>
 </html><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD2M9VBW24"></script>
