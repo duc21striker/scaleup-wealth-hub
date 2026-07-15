@@ -103,48 +103,53 @@
         </div>
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section class="contact-section">
-        <div class="contact-grid">
-            <!-- Contact Form -->
-            <div class="contact-form-wrapper">
-                <div class="contact-info-card">
-                    <h2>Get in Touch</h2>
-                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-                    
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="fullName">Full Name *</label>
-                            <input type="text" id="fullName" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number (Optional)</label>
-                            <input type="tel" id="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject">
-                                <option value="">Select a subject</option>
-                                <option value="AI Consulting">AI Consulting</option>
-                                <option value="Facebook Advertising">Facebook Advertising</option>
-                                <option value="Website Design">Website Design</option>
-                                <option value="Graphic Design">Graphic Design</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="sendButton">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <div id="formStatus" style="margin-top: 15px;"></div>
-                    </form>
+    <!-- ===== CONTACT FORM WITH FORMSPREE ===== -->
+<form class="contact-form" 
+      action="https://formspree.io/f/mbdnlvkj" 
+      method="POST">
+    
+    <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="name" placeholder="Enter your full name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">Select a subject</option>
+            <option value="AI Consulting">AI Consulting</option>
+            <option value="Facebook Advertising">Facebook Advertising</option>
+            <option value="Website Design">Website Design</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+    </div>
+    
+    <!-- Hidden fields -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_redirect" value="https://duc21striker.github.io/scaleup-wealth-hub/">
+    
+    <button type="submit" class="btn btn-primary" id="sendButton">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+    <div id="formStatus" style="margin-top: 15px;"></div>
+</form>
                 </div>
             </div>
 
@@ -388,8 +393,18 @@
 </html><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD2M9VBW24"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-PD2M9VBW24');
-</script>> 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const btn = document.getElementById('sendButton');
+    const status = document.getElementById('formStatus');
+    const originalText = btn.innerHTML;
+    
+    // Show loading
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+    status.innerHTML = '';
+    
+    // Formspree handles the rest
+    // The form will submit normally
+    // After submission, the user is redirected
+});
+</script> 
